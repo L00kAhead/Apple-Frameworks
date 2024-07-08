@@ -2,12 +2,12 @@
 //  FrameworkDetailView.swift
 //  Apple Frameworks
 //
-//  Created by Himanshu Soni on 08.07.2024.
-//
 
 import SwiftUI
 
 struct FrameworkDetailView: View {
+    
+    @Binding var isShowingDetailView: Bool
     let framework: Framework
     
     var body: some View {
@@ -15,9 +15,12 @@ struct FrameworkDetailView: View {
             HStack{
                 Spacer()
                 Button {
-                    print("")
+                    isShowingDetailView = false
                 } label: {
                     Image(systemName: "x.circle")
+                        .resizable()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.red)
                 }
 
             }
@@ -37,5 +40,5 @@ struct FrameworkDetailView: View {
 }
 
 #Preview {
-    FrameworkDetailView(framework: MockData.sampleFramework)
+    FrameworkDetailView(isShowingDetailView: .constant(true), framework: MockData.sampleFramework)
 }

@@ -19,7 +19,7 @@ struct MockData {
                                            imageName: "arkit",
                                            urlString: "https://developer.apple.com/augmented-reality/arkit",
                                            description: "ARKit 6 introduces 4K video, so you can capture stunning high-resolution videos of AR experiences — perfect for professional video editing, film production, social media apps, and more. Video and capture capabilities are expanded with support for HDR video and high-resolution background image capture. ARKit 6 also brings Location Anchors to new cities, such as Montreal, Sydney, Singapore, and Tokyo, and it features improvements to Motion Capture.")
-    
+    static let error = Framework(name: "Error", imageName: "x.circle", urlString: "", description: "Something Went Wrong!")
     static let frameworks = [
         Framework(name: "App Clips",
                   imageName: "appclip",
