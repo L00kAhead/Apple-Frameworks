@@ -9,16 +9,13 @@ struct FrameworkButton: View {
     let btnTitle: String
     
     var body: some View {
-        Button {
-            
-        } label : {
-            Text(btnTitle)
-                .font(.title2)
-        }
-        .frame(width: 280, height: 60)
-        .background(.red)
-        .foregroundColor(.white)
-        .cornerRadius(20)
+        Text(btnTitle)
+            .font(.title2)
+            .fontWeight(.semibold)
+            .frame(width: 280, height: 60)
+            .background(.red)
+            .foregroundColor(.white)
+            .cornerRadius(20)
     }
 }
 

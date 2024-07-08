@@ -3,7 +3,6 @@
 //  Apple Frameworks
 //
 
-
 import SwiftUI
 
 final class FrameworkGridViewModel: ObservableObject {
@@ -15,4 +14,5 @@ final class FrameworkGridViewModel: ObservableObject {
     
     @Published var isShowingDetailView = false
     
+    let columns = [GridItem(.flexible()), GridItem(.flexible()),GridItem(.flexible())]
 }
