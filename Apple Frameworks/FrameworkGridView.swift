@@ -37,6 +37,10 @@ struct FrameworkTitleView: View {
                 .resizable()
                 .frame(width: 100.0, height: 100.0)
             Text(framework.name)
+                .font(.title2)
+                .fontWeight(.semibold)
+                .scaledToFit()
+                .minimumScaleFactor(0.6)
         }
         .padding()
     }
