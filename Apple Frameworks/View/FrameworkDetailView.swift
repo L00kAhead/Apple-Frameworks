@@ -13,18 +13,7 @@ struct FrameworkDetailView: View {
     
     var body: some View {
         VStack{
-            HStack{
-                Spacer()
-                Button {
-                    isShowingDetailView = false
-                } label: {
-                    Image(systemName: "x.circle")
-                        .resizable()
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(.red)
-                }
-
-            }
+            XDismissButton(isShowingDetailView: $isShowingDetailView)
             Spacer()
             
             FrameworkTitleView(framework: framework)
@@ -43,7 +32,7 @@ struct FrameworkDetailView: View {
         }
         .padding()
         .sheet(isPresented: $isShowingSafariView, content: {
-            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+            SafariView(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!).ignoresSafeArea()
         })
     }
 }
