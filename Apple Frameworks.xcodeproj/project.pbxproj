@@ -27,7 +27,6 @@
 		45EE932E2C3C00E4000F0313 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45EE93352C3C0114000F0313 /* FrameworkGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridView.swift; sourceTree = "<group>"; };
 		45EE93372C3C039C000F0313 /* Framework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Framework.swift; sourceTree = "<group>"; };
-		45EE93392C3C04BF000F0313 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		45EE933A2C3C077B000F0313 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		45EE933C2C3C0AE9000F0313 /* FrameworkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkButton.swift; sourceTree = "<group>"; };
 		45EE933E2C3C0D25000F0313 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
@@ -71,7 +70,6 @@
 				45EE934C2C3C3F12000F0313 /* ViewModel */,
 				45EE934D2C3C3F22000F0313 /* UIKit Components */,
 				45EE932D2C3C00E4000F0313 /* Preview Content */,
-				45EE93392C3C04BF000F0313 /* README.md */,
 				45EE93272C3C00E3000F0313 /* Apple_FrameworksApp.swift */,
 				45EE932B2C3C00E4000F0313 /* Assets.xcassets */,
 			);
