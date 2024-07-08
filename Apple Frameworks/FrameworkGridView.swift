@@ -2,14 +2,17 @@
 //  FrameworkGridView.swift
 //  Apple Frameworks
 //
-//  Created by Himanshu Soni on 08.07.2024.
-//
 
 import SwiftUI
 
 struct FrameworkGridView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image("arkit")
+                .resizable()
+                .frame(width: 100.0, height: 100.0)
+            Text("AR Kit")
+        }
     }
 }
 
