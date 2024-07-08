@@ -7,6 +7,17 @@ import SwiftUI
 
 struct FrameworkGridView: View {
     var body: some View {
+        FrameworkTitleView()
+    }
+}
+
+#Preview {
+    FrameworkGridView()
+}
+
+struct FrameworkTitleView: View {
+    
+    var body: some View {
         VStack {
             Image("arkit")
                 .resizable()
@@ -14,8 +25,4 @@ struct FrameworkGridView: View {
             Text("AR Kit")
         }
     }
-}
-
-#Preview {
-    FrameworkGridView()
 }
