@@ -21,7 +21,6 @@ struct FrameworkTitleView: View {
                 .minimumScaleFactor(0.8)
                 .foregroundColor(.black)
         }
-        .padding()
     }
 }
 

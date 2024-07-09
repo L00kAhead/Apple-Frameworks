@@ -15,12 +15,14 @@ struct FrameworkDetailView: View {
         ZStack{
             BackgroundView()
             
-            VStack{
+            VStack(spacing: 20){
+                Spacer()
                 FrameworkTitleView(framework: framework)
                 Text(framework.description)
                     .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                     .font(.body)
                     .lineSpacing(5)
+                    .foregroundColor(.black)
                 
                 Spacer()
                 
@@ -31,7 +33,7 @@ struct FrameworkDetailView: View {
                 }
                 .buttonStyle(BorderedProminentButtonStyle())
                 .buttonBorderShape(.roundedRectangle)
-                .controlSize(.extraLarge)
+                .controlSize(.large)
                 .tint(.black)
             }
             .padding()

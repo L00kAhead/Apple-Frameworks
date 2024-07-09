@@ -22,9 +22,7 @@ struct FrameworkGridView: View {
                                 FrameworkTitleView(framework: framework)
                             }
                         }
-                        .navigationTitle("🍎 Frameworks")
-                        .navigationBarTitleDisplayMode(.inline)
-                        
+                        .navigationBarTitle("🍎 Frameworks", displayMode: .inline)
                     }
                     .navigationDestination(for: Framework.self){ framework in
                         FrameworkDetailView(framework: framework)
