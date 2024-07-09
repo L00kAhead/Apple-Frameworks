@@ -12,12 +12,14 @@ struct FrameworkTitleView: View {
         VStack {
             Image(framework.imageName)
                 .resizable()
-                .frame(width: 100.0, height: 100.0)
+                .frame(width: 80.0, height: 80.0)
+                .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)
             Text(framework.name)
-                .font(.title2)
+                .font(.title3)
                 .fontWeight(.semibold)
                 .scaledToFit()
-                .minimumScaleFactor(0.6)
+                .minimumScaleFactor(0.8)
+                .foregroundColor(.black)
         }
         .padding()
     }

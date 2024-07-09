@@ -12,19 +12,23 @@ struct FrameworkGridView: View {
     
     var body: some View {
         
-        NavigationStack{
-            ScrollView{
-                LazyVGrid(columns: viewModel.columns){
-                    ForEach(frameworks){ framework in
-                        NavigationLink(value: framework){
-                            FrameworkTitleView(framework: framework)
+        ZStack{
+            BackgroundView()
+            NavigationStack{
+                ScrollView{
+                    LazyVGrid(columns: viewModel.columns){
+                        ForEach(frameworks){ framework in
+                            NavigationLink(value: framework){
+                                FrameworkTitleView(framework: framework)
+                            }
                         }
-                        .accentColor(Color(.label))
+                        .navigationTitle("🍎 Frameworks")
+                        .navigationBarTitleDisplayMode(.inline)
+                        
                     }
-                }
-                .navigationTitle("🍎 Frameworks")
-                .navigationDestination(for: Framework.self){ framework in
-                    FrameworkDetailView(framework: framework)
+                    .navigationDestination(for: Framework.self){ framework in
+                        FrameworkDetailView(framework: framework)
+                    }
                 }
             }
         }
